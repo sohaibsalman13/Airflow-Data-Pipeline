@@ -4,9 +4,9 @@ processes it using Airflow, and loads it into a PostgreSQL database running in a
 This setup is useful for storing and querying historical weather data for analysis.</br>
 
 ## Structure
-`dags/`: Contains the Airflow DAG (`etlweather.py`), which orchestrates the pipeline.
-`docker-compose.yml`: Configures the PostgreSQL database container.
-`Dockerfile`: Defines the environment to run Airflow and the pipeline.
+`dags/`: Contains the Airflow DAG (`etlweather.py`), which orchestrates the pipeline.</br>
+`docker-compose.yml`: Configures the PostgreSQL database container.</br>
+`Dockerfile`: Defines the environment to run Airflow and the pipeline.</br>
 
 ## Setup
 1. Clone the repository.
@@ -16,3 +16,7 @@ This setup is useful for storing and querying historical weather data for analys
 
 ## Airflow 
 ![Screenshot 2024-11-09 at 11 50 45 PM](https://github.com/user-attachments/assets/0800bfa6-9797-48f7-8925-a2743efefb39)
+
+## Data Access
+The loaded data can then be accessed and queryed using any database administration such as Dbeaver. </br>
+Make connection to PostgreSQL using authentication credentials
